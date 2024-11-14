@@ -1,0 +1,93 @@
+/* Container for the product grid */
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px; /* Space between product cards */
+  justify-content: space-between; /* Spread the items evenly */
+  padding: 16px; /* Space around the grid */
+}
+
+/* Individual product card styling */
+.product-card2 {
+  flex: 1 1 calc(25% - 16px); /* Adjusts width to fit 4 cards per row minus the gap */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Styling for product images */
+.product-image1 {
+  width: 100%; /* Ensure the image fills the card width */
+  height: 320px; /* Set a fixed height to make all images equal */
+  object-fit: cover; /* Makes the image cover the entire area without distorting */
+  border-radius: 8px;
+}
+
+/* Product name styling */
+.product-name1 {
+  font-size: 1.25rem;
+  margin: 16px 0 8px 0;
+  font-weight: 600;
+  color: #000000;
+}
+
+/* Product description styling */
+.product-description1 {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+/* Product price styling */
+.product-price1 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #e20000;
+}
+
+/* Styling for the old price */
+del {
+  font-size: 1rem;
+  color: #999;
+  margin-right: 8px;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .product-card2 {
+    flex: 1 1 calc(50% - 16px); /* 2 cards per row */
+  }
+  .product-image1 {
+    height: 260px; /* Adjust height for smaller screens */
+  }
+  .product-name1 {
+    font-size: 1.15rem;
+  }
+  .product-price1 {
+    font-size: 1.15rem;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .product-card2 {
+    flex: 1 1 100%; /* Stack cards on top of each other */
+    margin-bottom: 10px;
+  }
+  .product-image1 {
+    height: 200px; /* Smaller image height for mobile */
+  }
+  .product-name1 {
+    font-size: 1rem;
+  }
+  .product-price1 {
+    font-size: 1rem;
+  }
+  .product-description1 {
+    font-size: 0.9rem;
+  }
+}

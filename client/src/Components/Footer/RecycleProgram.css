@@ -1,0 +1,189 @@
+/* Container styling */
+.recycle-container {
+  padding: 40px;
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Title Styling */
+.recycle-title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+  color: #2b2b2b;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Content layout - flexbox */
+.recycle-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.recycle-icon {
+  margin-left: 100px;
+  margin-top: 50px;
+  width: 500px;
+  height: 300px;
+  display: block;
+}
+
+/* Recycle icon */
+.recycle-icon img {
+  width: 320px;
+  height: 320px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Right section information */
+.recycle-info {
+  max-width: 600px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+/* Right section hover effect */
+.recycle-info:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Styling for links */
+.recycle-info a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+.recycle-info a:hover {
+  text-decoration: underline;
+  color: #005999;
+}
+
+/* Collection section */
+.recycle-collection {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid #ddd;
+}
+
+/* Title for collection */
+.collection-title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #444;
+}
+
+/* PDF link styling */
+.pdf-link {
+  color: #0077cc;
+  text-decoration: none;
+  background-color: #f1f1f1;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.pdf-link:hover {
+  background-color: #e0e0e0;
+  color: #005999;
+}
+
+/* Breadcrumb section */
+.breadcrumb {
+  margin-top: 40px;
+  color: #666;
+  font-size: 14px;
+  text-align: center;
+}
+
+.breadcrumb-highlight {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Responsive adjustments */
+
+/* Tablet view adjustments */
+@media (max-width: 768px) {
+  .recycle-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .recycle-icon {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+    height: auto;
+  }
+
+  .recycle-info {
+    max-width: 90%;
+  }
+
+  .recycle-icon img {
+    width: 80%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 480px) {
+  .recycle-container {
+    padding: 20px;
+  }
+
+  .recycle-title {
+      font-size: large;
+      font-weight: 500;
+  
+  }
+
+  .recycle-icon {
+    margin-top: 10px;
+    width: 100%;
+  }
+
+  .recycle-icon img {
+    width: 50%;
+    height: auto;
+  }
+
+  .recycle-info {
+    padding: 15px;
+  }
+
+  .collection-title {
+    font-size: 16px;
+  }
+
+  .pdf-link {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+
+  .breadcrumb {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+  .p {
+    font-size: 12px;
+}
+}

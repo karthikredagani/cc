@@ -1,0 +1,129 @@
+/* Carousel container */
+.carousel-container {
+    width: 98%;
+    padding: 20px 0;
+    text-align: center;
+    overflow: hidden;
+    margin-left: 20px;
+}
+
+/* Carousel title */
+.cou {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Pagination */
+.carousel-pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-line {
+    width: 200px;
+    height: 4px;
+    background-color: #e0e0e0;
+    margin: 0 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-line.active {
+    background-color: #000;
+}
+
+/* Carousel item */
+.carousel-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* Image styling */
+.category-image {
+    width: 100%;
+    max-width: 250px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.category-image:hover {
+    transform: scale(1.05);
+}
+
+/* Category name */
+.category-name {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #555;
+}
+
+/* Override slick styles */
+.slick-slide {
+    padding: 0 5px;
+    box-sizing: border-box;
+}
+
+.slick-list {
+    margin: 0 -15px;
+    overflow: hidden;
+}
+
+/* Responsive styling */
+
+/* Large tablets */
+@media (max-width: 1024px) {
+    .category-image {
+        height: 180px;
+    }
+    .cou {
+        font-size: 1.25rem;
+    }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .category-image {
+        height: 150px;
+    }
+    .cou {
+        font-size: 1.2rem;
+    }
+    .pagination-line {
+        width: 150px;
+    }
+    .carousel-container {
+        padding: 15px 0;
+        margin-left: 10px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    .category-image {
+        height: 120px;
+        max-width: 180px; /* Limit width for smaller screens */
+    }
+    .cou {
+        font-size: 1rem;
+    }
+    .category-name {
+        font-size: 0.9rem;
+    }
+    .pagination-line {
+        width: 100px;
+        height: 3px;
+    }
+    .carousel-container {
+        margin-left: 5px;
+        padding: 10px 0;
+    }
+}

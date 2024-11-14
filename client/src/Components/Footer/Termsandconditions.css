@@ -1,0 +1,126 @@
+.terms-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.terms-container h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: rgb(141, 107, 63);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 20px;
+}
+
+.terms-container h2 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: rgb(117, 97, 71);
+}
+
+.terms-container p, .terms-container ul {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #505050;
+    margin-bottom: 15px;
+    padding: 15px;
+}
+
+.terms-container ul {
+    padding-left: 20px;
+}
+
+.terms-container ul li {
+    margin-bottom: 5px;
+}
+
+.terms-container a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.terms-container a:hover {
+    text-decoration: underline;
+}
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .terms-container {
+        padding: 15px; /* Reduce padding for mobile */
+        max-width: 100%; /* Ensure the container uses full width on mobile */
+    }
+
+    .terms-container h1 {
+        font-size: 2.5rem; /* Adjust heading size for mobile */
+        padding: 15px; /* Adjust padding for heading */
+    }
+
+    .terms-container h2 {
+        font-size: 1.3rem; /* Adjust subheading size for mobile */
+        margin-top: 15px;
+        margin-bottom: 8px;
+    }
+
+    .terms-container p,
+    .terms-container ul {
+        font-size: 1rem; /* Reduce font size for better readability on mobile */
+        line-height: 1.5;
+        margin-bottom: 12px;
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .terms-container ul {
+        padding-left: 15px; /* Adjust left padding for ul */
+    }
+
+    .terms-container ul li {
+        font-size: 1rem; /* Adjust list item font size */
+    }
+
+    .terms-container a {
+        font-size: 1rem; /* Adjust link font size for mobile */
+    }
+
+    .terms-container a:hover {
+        font-size: 1rem; /* Ensure link hover effect is consistent */
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    .terms-container {
+        padding: 10px; /* Further reduce padding */
+    }
+
+    .terms-container h1 {
+        font-size: 1.5rem; /* Smaller heading for very small screens */
+        padding: 10px; 
+        font-weight: 500;/* Adjust padding for heading */
+    }
+
+    .terms-container h2 {
+        font-size: 1.2rem; /* Smaller subheading font size */
+    }
+
+    .terms-container p,
+    .terms-container ul {
+        font-size: 12px; /* Smaller text for paragraphs and lists */
+        line-height: 1.4;
+        padding: 8px; /* Adjust padding for smaller screens */
+    }
+
+    .terms-container ul {
+        padding-left: 10px; /* Reduce padding for ul */
+    }
+
+    .terms-container ul li {
+        font-size: 12px; /* Adjust list item font size */
+    }
+
+    .terms-container a {
+        font-size: 0.9rem; /* Adjust link font size */
+    }
+}

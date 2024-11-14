@@ -1,0 +1,28 @@
+/* Container for the main app content */
+.app-container {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* Responsive adjustments for the Images component */
+
+/* Tablet view */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 16px;
+    display: flex;
+  flex-direction: column;
+    gap: 16px;
+  }
+}
+
+/* Mobile view */
+@media (max-width: 480px) {
+  .app-container {
+    padding: 10px;
+    display: flex;
+  flex-direction: column;
+    gap: 12px;
+  }
+}

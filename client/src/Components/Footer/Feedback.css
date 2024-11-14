@@ -1,0 +1,152 @@
+.feedback-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  
+}
+
+.feedback-form label {
+  display: block;
+  margin-top: 1px;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.submit-btn {
+  margin-top: 15px;
+  padding: 10px 15px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background-color: #218838;
+}
+
+/* Star rating styles */
+.star-rating {
+  
+  cursor: pointer;
+  
+}
+
+.star {
+  font-size: 60px; /* Adjust the size of stars */
+  color: lightgray; /* Default color for stars */
+  margin-right: 5px;
+}
+
+.star.filled {
+  color: gold; /* Color for filled stars */
+}
+
+label{
+  font-size: x-large;
+}
+h1{
+  font-size: 2.5rem;
+  color: rgb(0, 0, 129);
+  text-transform: capitalize;
+}
+.feedback-message {
+  margin-top: 10px;
+  font-size: 1rem; /* Adjust size as needed */
+  color: green; /* Change color for success messages */
+}
+
+/* Optional: add styles for error messages */
+.feedback-message.error {
+  color: red; /* Change color for error messages */
+}
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .feedback-container {
+      padding: 15px; /* Reduce padding for mobile */
+      max-width: 100%; /* Ensure the container uses full width on mobile */
+  }
+
+  .feedback-form label {
+      font-size: 1rem; /* Adjust label font size for mobile */
+  }
+
+  .feedback-form input,
+  .feedback-form textarea {
+      padding: 12px; /* Adjust padding for input fields */
+      font-size: 1rem; /* Adjust font size for better readability */
+  }
+
+  .submit-btn {
+      width: 100%; /* Make submit button full width on mobile */
+      padding: 12px; /* Adjust padding for mobile */
+      font-size: 1rem; /* Adjust font size for button */
+  }
+
+  .star-rating {
+      font-size: 40px; /* Adjust star size for mobile */
+  }
+
+  .star {
+      font-size: 40px; /* Adjust star size for mobile */
+  }
+
+  h1 {
+      font-size: 2rem; /* Adjust heading size for smaller screens */
+  }
+
+  .feedback-message {
+      font-size: 0.9rem; /* Adjust message font size for mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .feedback-container {
+      padding: 10px; /* Further reduce padding */
+  }
+
+  .feedback-form label {
+      font-size: 0.9rem; /* Adjust label font size */
+  }
+
+  .feedback-form input,
+  .feedback-form textarea {
+      font-size: 0.9rem; /* Adjust font size for input fields */
+      padding: 10px; /* Further reduce padding */
+  }
+
+  .submit-btn {
+      font-size: 0.9rem;
+      margin: 0;
+  }
+
+  .star-rating {
+      font-size: 35px; /* Further reduce star size */
+  }
+
+  .star {
+      font-size: 35px; /* Adjust star size for very small screens */
+  }
+
+  h1 {
+      font-size: 1.8rem; /* Smaller heading for very small screens */
+  }
+
+  .feedback-message {
+      font-size: 0.8rem; /* Further reduce message font size */
+  }
+  .p{
+    font-size: 12px; /* Further reduce message font size */
+}
+}

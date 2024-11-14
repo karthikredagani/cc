@@ -1,0 +1,233 @@
+.cart-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Flexbox for Cart Content: Items on Left, Summary on Right */
+.cart-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+/* Left Side: Cart Items */
+.cart-items-container {
+  flex: 1; /* Takes up more space */
+  width: 750px;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.cart-item-image {
+  width: 300px;
+  height: 180px;
+  object-fit: cover;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.remove-btn1 {
+  padding: 8px 12px;
+  background-color: #b9b9b9;
+  color: rgb(0, 0, 0);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 200px;
+}
+
+.remove-btn1:hover {
+  background-color:  #ff2f2f;
+  color: white;
+}
+
+/* Right Side: Coupon, Pricing, and Checkout */
+.cart-summary-container {
+  flex: 0.35; /* Smaller width for summary */
+  background-color: #f3f3f3;
+  padding: 20px;
+  width: 500px;
+  border-radius: 8px;
+}
+
+.coupon-section input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.apply-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 0%;
+}
+
+.apply-btn:hover {
+  background-color: #45a049;
+}
+
+.pricing-details {
+  margin-top: 20px;
+}
+
+.checkout-section {
+  margin-top: 20px;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.checkout-btn:hover {
+  background-color: #0056b3;
+}
+.add-wish-btn1{
+  padding: 8px 12px;
+  background-color: #1e68b7;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  width: 200px;
+  
+}
+.add-wish-btn1:hover{
+  background-color: #003064;
+}
+.but {
+  display: flex;
+  justify-content: center;
+}
+/* Responsive styles */
+@media (max-width: 768px) {
+  .cart-content {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center align content */
+  }
+
+  .cart-items-container,
+  .cart-summary-container {
+    width: 100%; /* Full width containers */
+    margin-top: 20px;
+  }
+
+  .cart-item {
+    display: flex;
+    flex-direction: row; /* Place image and info side by side */
+    align-items: center;
+    gap: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  .cart-item-image {
+    width: 40%; /* Take up 40% of width */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+
+  .cart-item-info {
+    width: 60%; /* Take up 60% of width */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .price-quantity-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .remove-btn1,
+  .add-wish-btn1 {
+    width: 100%; /* Full width buttons */
+    margin: 5px 0;
+  }
+
+  .checkout-btn,
+  .apply-btn {
+    width: 100%; /* Full width for action buttons */
+  }
+
+  .coupon-section input {
+    width: 100%; /* Full width input field */
+  }
+}
+
+/* Very small screens */
+@media (max-width: 480px) {
+  
+  .name {
+    font-size: medium;
+}
+.price {
+  font-size: 18px;
+  color: #ff2f2f;
+}
+.label {
+  font-size: smaller;
+}
+  .cart-item-image {
+    width: 40%;
+    height: 100px; /* Ensure image scales properly */
+  }
+
+  .cart-summary-container {
+    padding: 15px; /* Adjust padding */
+  }
+
+  .cart-item-info, .remove-btn1, .add-wish-btn1 {
+    width: 60px;
+    padding: 3px;
+    font-size: 12px;
+    margin-left: 4px;
+}
+  .checkout-btn,
+  .apply-btn {
+    padding: 12px; /* Adjust padding */
+    margin-left: 0%;
+  }
+  .but {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}

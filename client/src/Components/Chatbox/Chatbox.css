@@ -1,0 +1,188 @@
+.chatbox-container {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+}
+
+/* Chat Icon Button on Homepage */
+.start-chat-button {
+  background-color: #0059ffe8; /* Bright yellow color */
+  color: white;
+  padding: 20px; /* Increase padding for bigger size */
+  border-radius: 50%;
+  font-size: 18px; /* Increase font size */
+  cursor: pointer;
+  text-align: center;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Slightly larger shadow for emphasis */
+  width: 60px; /* Width of the button */
+  height: 60px; /* Height of the button */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Optional: Add hover effect for visual appeal */
+.start-chat-button:hover {
+  background-color: #075efff1; /* Slightly darker yellow for hover effect */
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.chatbox {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  width: 400px; /* Larger chatbox */
+  height: 500px; /* Larger chatbox */
+  position: fixed;
+  bottom: 70px;
+  right: 0px;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: relative; /* Makes the chatbox the reference point for absolute positioning */
+}
+
+.chat-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+}
+
+.chat-title {
+  white-space: nowrap; /* Prevents wrapping, keeps "Chat with us" on one line */
+  overflow: hidden;
+  text-overflow: ellipsis; /* In case the text overflows */
+}
+
+/* Positioning the Cancel button in the top-right corner */
+.cancel-button {
+  position: absolute; /* Position it inside the chatbox */
+  top: 0px; /* Distance from the top */
+  left:150px; /* Distance from the right */
+  background-color: transparent;
+  border: none;
+  color: #FF6F61; /* Red color */
+  cursor: pointer;
+  font-size: 20px; /* Adjust the font size */
+  padding: 0;
+  outline: none; /* Remove the focus outline */
+}
+
+.cancel-button i {
+  font-size: 1.5rem; /* Adjust the icon size */
+}
+
+.cancel-button:focus {
+  outline: none; /* Ensure no blue outline on focus */
+}
+
+.cancel-button:hover {
+  color: green; /* Change to green on hover */
+  background-color: transparent; /* Ensure the background stays transparent */
+}
+
+.faq-questions {
+  margin-top: 10px;
+  font-size: 1rem; /* Smaller font size */
+}
+
+.faq-item {
+  border-bottom: 1px solid #e0e0e0;
+  padding: 10px 0;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: #f8f8f8;
+  border-radius: 8px;
+}
+
+.faq-question {
+  font-size: 1rem; /* Smaller font size */
+  font-weight: 600;
+  color: #34495e;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+  color: #1abc9c;
+}
+
+.faq-question::before {
+  content: '\f107';
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1rem; /* Smaller arrow */
+  color: #1abc9c;
+  position: absolute;
+  right: 0;
+  transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question::before {
+  transform: rotate(-180deg);
+  color: #e74c3c;
+}
+
+.faq-answer {
+  font-size: 0.9rem; /* Smaller font size */
+  color: #7f8c8d;
+  margin-top: 10px;
+  line-height: 1.4;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 500px;
+  padding-top: 10px;
+}
+
+.cancel-options {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.end-chat,
+.continue-chat {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.end-chat:hover,
+.continue-chat:hover {
+  background-color: #388e3c;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .chatbox {
+    width: 350px;
+    height: 500px;
+  }
+
+  .faq-question {
+    font-size: 0.9rem;
+  }
+
+  .faq-answer {
+    font-size: 0.8rem;
+  }
+}

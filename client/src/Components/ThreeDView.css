@@ -1,0 +1,112 @@
+/* Base Styles */
+.threeD-view-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+.threeD-viewer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.color-options {
+  margin-top: 20px;
+}
+
+.color-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+}
+
+.color-button.active {
+  border: 2px solid #000;
+}
+
+.button-group {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.back,
+.ar-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 1px solid #000;
+  border-radius: 5px;
+}
+
+.back {
+  background-color: #fff;
+  color: #000;
+  width: 180px;
+}
+
+.back:hover {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.ar-button {
+  background-color: #fff;
+  color: #000;
+  width: 200px;
+  height: 45px;
+}
+
+.ar-button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .threeD-view-page {
+    padding: 10px;
+  }
+
+  .threeD-viewer-container {
+    max-width: 100%;
+  }
+
+  .color-options {
+    margin-top: 15px;
+  }
+
+  .color-button {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+  }
+
+  .button-group {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .back, .ar-button {
+    width: 100%;
+    max-width: 280px;
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+  
+}

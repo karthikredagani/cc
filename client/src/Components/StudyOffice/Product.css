@@ -1,0 +1,232 @@
+/* Product Card */
+.product-card4{
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 62vh;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    gap: 0px;
+    margin-bottom: 10px;
+    margin-left:15px ;
+    padding: 10px 10px 10px 10px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0.0, 0.2);
+}
+
+/* Product Image */
+.product-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Product Info */
+.product-info {
+    padding: 8px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    margin-bottom: 10px;
+}
+
+/* Product Name */
+.product-name {
+    font-size: 1.1em;
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+}
+
+/* Product Description */
+.product-description {
+    font-size: 0.85em;
+    color: #555;
+    margin: 5px 0;
+    line-height: 1.4;
+}
+
+/* Price and Wishlist Wrapper */
+.product-buttons2 {
+    display: flex;
+    align-items: center;
+    margin-top: 6px;
+    width: 100%;
+}
+
+/* Product Price */
+.product-price {
+    font-size: 1.2em;
+    width: 33%;
+    color: #000000;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.del {
+    width: 38%;
+    color: #888;
+    font-size: 0.7em;
+    padding-right: 8px;
+    /* display: flex; */
+
+}
+
+/* Wrapper for Available and Wishlist buttons */
+.av-wishlist-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+}
+
+/* Available button styling */
+.av1 {
+    font-size: 11px; /* Slightly smaller font */
+    background-color: transparent;
+    color: green;
+    border: solid 1px green;
+    width: 80px; /* Slightly reduced width */
+    height: 2px; /* Slightly reduced height */
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.av1:hover {
+    background-color: #f8f8f8;
+}
+
+/* Wishlist button styling */
+.product-wish2 {    margin-top: 1px;
+ 
+    background-color: #fff;
+    color: #000000;
+        border: none;
+    font-size: 1.6em;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    padding: 4px;
+    padding-left: 120px;
+}
+
+.product-wish2:hover {
+    color: red;
+    background-color: #fff;
+}
+
+.product-percentage {
+    width: 33%;
+    font-size: 15px;
+    font-weight: bold;
+    color: rgb(202, 0, 0);
+    
+}
+
+
+/* Mobile and Tablet Media Queries */
+@media (max-width: 768px) {
+    .product-card4 {
+        width: 100%; /* Ensure full width on tablets */
+        margin: 0 auto 10px auto;
+    }
+
+    .product-image {
+        height: 250px;
+    }
+
+    .product-info {
+        padding: 5px 10px;
+        gap: 3px;
+    }
+
+    .product-name {
+        font-size: 0.95em;
+    }
+
+    .product-description {
+        font-size: 0.8em;
+    }
+
+    .product-price {
+        font-size: 0.9em;
+    }
+
+    .product-percentage {
+        font-size: 0.8em;
+    }
+
+    .av1 {
+        font-size: 0.8em;
+        width: 70px;
+        height: 18px;
+    }
+
+    /* Reduced bottom gap below available and wishlist wrapper on tablets */
+    .av-wishlist-wrapper {
+        margin-bottom: 8px;
+    }
+}
+
+/* Mobile Phones */
+@media (max-width: 480px) {
+    .product-card4 {
+        width: 100%; /* Full width for mobile layout */
+        margin: 0 auto 10px auto;
+        height: 440px;
+    }
+
+    .product-image {
+        height: 200px; /* Reduced height for mobile */
+    }
+
+    .product-info {
+        padding: 5px 10px;
+        gap: 2px;
+    }
+
+    .product-name {
+        font-size: 1.3em;
+    }
+
+    .product-description {
+        font-size: 0.75em;
+    }
+
+    .product-price {
+        font-size: 1.2em;
+        margin-right: 0px;
+    }
+
+    .product-percentage {
+        font-size: 1.1em;
+    }
+
+    .av1 {
+        font-size: 0.75em;
+        width: 65px;
+        height: 18px;
+    }
+
+    .product-wish2 {
+        font-size: 1.2em;
+    }
+
+    /* Reduced bottom gap below available and wishlist wrapper on mobile */
+    .av-wishlist-wrapper {
+        margin-bottom: 5px;
+    }
+}

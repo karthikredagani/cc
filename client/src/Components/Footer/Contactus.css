@@ -1,0 +1,238 @@
+.contact-us-container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f5f5f5;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    color: #222;
+    font-size: 44px;
+    margin-bottom: 20px;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch; /* Ensures all contact cards have the same height */
+    gap: 20px; /* Adds spacing between cards */
+    margin-bottom: 30px;
+}
+
+.contact-card {
+    flex: 1; /* Makes all cards equal in width */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+    text-align: center;
+    height: 200px; /* Ensures all cards have the same height */
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+}
+
+.contact-card img {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 15px;
+}
+
+.contact-card h5 {
+    margin: 0;
+    font-size: 18px;
+    color: #007bff;
+}
+
+.contact-card a {
+    color: #555;
+    font-size: 16px;
+    text-decoration: none;
+    margin-top: 8px;
+    transition: color 0.3s ease;
+}
+
+.contact-card a:hover {
+    color: #007bff;
+}
+
+/* Form Styling */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form label {
+    font-size: 14px;
+    color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #007bff;
+}
+
+textarea {
+    resize: none;
+    height: 120px;
+}
+
+.submit-btn {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: #0056b3;
+}
+
+/* General Paragraph Styling */
+.contact-us-container p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background-color: #f9f9f9;
+    border-left: 4px solid #007bff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover Effect */
+.contact-us-container p:hover {
+    background-color: #f1f1f1;
+    border-left-color: #0056b3;
+    transition: all 0.3s ease-in-out;
+}
+/* Mobile View Adjustments */
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    /* Keep email, phone, and WhatsApp in a row */
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px; /* Adjust space between items */
+    }
+
+    .contact-card {
+        width: auto; /* Ensure the cards do not take full width */
+        height: auto; /* Let content define height */
+        padding: 10px; /* Reduced padding */
+        flex: 1 1 30%; /* Allow flexibility and make each card take about 30% of width */
+    }
+
+    .contact-card img {
+        width: 40px; /* Reduced icon size for mobile */
+        height: 40px;
+        margin-bottom: 8px;
+    }
+
+    .contact-card h5 {
+        font-size: 14px; /* Adjust heading font size */
+    }
+
+    .contact-card a {
+        font-size: 12px; /* Adjust link font size */
+    }
+
+    /* Adjust form and button size for mobile */
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px; /* Smaller padding */
+        font-size: 14px; /* Adjust font size */
+    }
+
+    .submit-btn {
+        font-size: 16px; /* Adjust button font size */
+        padding: 10px; /* Smaller button padding */
+    }
+
+    .contact-us-container p {
+        font-size: 14px; /* Adjust paragraph font size */
+        padding: 8px 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Further adjustments for very small screens */
+    h1 {
+        font-size: 32px; /* Smaller heading size */
+    }
+
+    .contact-us-container {
+        padding: 20px; /* Reduced padding for the main container */
+    }
+
+    .contact-card img {
+        width: 30px;
+        height: 30px;
+    }
+    .msg {
+        width: 100%;
+        padding: 0.75rem;
+        margin: 1px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .contact-card h5 {
+        font-size: 12px;
+    }
+
+    .contact-card a {
+        font-size: 10px;
+        display: none;
+    }
+
+    .submit-btn {
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    .contact-us-container p {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+    .lab{
+        font-size: 20px;
+    }
+    .sa{
+        font-size: 20px;
+        padding: 8px 10px;
+    }
+
+}

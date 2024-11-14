@@ -1,0 +1,27 @@
+
+ 
+ .promotion-section img {
+   width: 100%;
+   max-width: 500px; /* Limits max width on large screens */
+   height: 400px; /* Maintains aspect ratio */
+   border-radius: 10px;
+   object-fit: cover;
+ }
+ 
+ /* Tablet view adjustments */
+ @media (max-width: 768px) {
+   .promotion-section img {
+     max-width: 600px; /* Reduces max width for tablets */
+   }
+ }
+ 
+ /* Mobile view adjustments */
+ @media (max-width: 480px) {
+   .promotion-section img {
+     max-width: 100%; /* Ensures image fits the mobile screen */
+     border-radius: 8px; /* Slightly smaller radius for mobile */
+   }
+   .promotion-section img {
+    max-height: 300px; /* Reduces max width for tablets */
+  }
+ }

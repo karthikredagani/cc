@@ -1,0 +1,86 @@
+.auth-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-box {
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 500px; /* Reduced width to match design */
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem; /* Space below the heading */
+}
+
+.input-group {
+  margin-bottom: 1rem;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.input-group input, 
+button, 
+.google-login-btn {
+  width: 100%; /* Full width for input, button, and Google login */
+  padding: 12px; /* Equal padding for input fields and buttons */
+  border-radius: 5px;
+  border: 1px solid #ccc; /* Light border for inputs */
+  box-sizing: border-box; /* Ensure padding doesn’t affect width */
+  font-size: 16px; /* Font size for consistency */
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Darken button on hover */
+}
+
+.google-login-btn {
+  background-color: #ccc;
+  color: black;
+  margin-top: 10px;
+  border: none;
+}
+
+.google-login-btn:hover {
+  background-color: #aaa; /* Darken on hover */
+}
+
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.error-message, 
+.success-message {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.error-message {
+  color: red;
+}
+
+.success-message {
+  color: green;
+}
+.success-message {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: green; /* Change this color as desired */
+}

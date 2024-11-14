@@ -1,0 +1,98 @@
+.urban-comfort-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .urban-comfort-title {
+    font-size: 2.5rem;
+    color: #34495e;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .urban-comfort-description {
+    font-size: 1.2rem;
+    color: #7f8c8d;
+    line-height: 1.6;
+    margin-bottom: 30px;
+  }
+  
+  .urban-comfort-features h3 {
+    font-size: 1.8rem;
+    color: #1abc9c;
+    margin-bottom: 15px;
+  }
+  
+  .urban-comfort-features ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .urban-comfort-features ul li {
+    font-size: 1.2rem;
+    color: #34495e;
+    margin-bottom: 10px;
+  }
+  /* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .urban-comfort-container {
+      padding: 15px; /* Reduce padding for mobile */
+      max-width: 100%; /* Ensure full width on smaller screens */
+  }
+
+  .urban-comfort-title {
+      font-size: 2rem; /* Adjust font size for title on mobile */
+      margin-bottom: 15px;
+  }
+
+  .urban-comfort-description {
+      font-size: 1rem; /* Adjust font size for description */
+      line-height: 1.5;
+      margin-bottom: 20px;
+  }
+
+  .urban-comfort-features h3 {
+      font-size: 1.5rem; /* Adjust heading size for features */
+      margin-bottom: 10px;
+  }
+
+  .urban-comfort-features ul li {
+      font-size: 1rem; /* Adjust list item font size */
+      margin-bottom: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for very small screens */
+  .urban-comfort-container {
+      padding: 10px; 
+      margin: 0;/* Further reduce padding */
+  }
+
+  .urban-comfort-title {
+      font-size: 1.4rem; /* Smaller title font for very small screens */
+      margin-bottom: 12px;
+      font-weight: 500;
+      margin: 0;
+  }
+
+  .urban-comfort-description {
+      font-size: 0.9rem; /* Smaller font size for description */
+      line-height: 1.4;
+      margin-bottom: 15px;
+  }
+
+  .urban-comfort-features h3 {
+      font-size: 1.3rem; /* Smaller font size for feature headings */
+      margin-bottom: 8px;
+  }
+
+  .urban-comfort-features ul li {
+      font-size: 0.9rem; /* Smaller list item font size */
+      margin-bottom: 6px;
+  }
+}

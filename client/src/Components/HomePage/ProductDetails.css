@@ -1,0 +1,397 @@
+.product-details {
+    display: flex;
+    gap: 10px; /* Reduced gap between image and details */
+    padding: 20px;
+    max-width: 90%;
+    height: 650px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.image-section img {
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Add transition for zoom */
+}
+
+.image-section img:hover {
+    transform: scale(1); /* Zoom the image when hovered */
+}
+
+.details-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: first baseline;
+    margin-left: 50px;
+}
+
+.details-section h2, 
+.details-section p {
+    margin: 5px 0; /* Reduced margins for less space between text */
+}
+
+.details-section label {
+    margin: 10px 0; /* Reduced space around the quantity label */
+    font-weight: bold;
+}
+
+.price {
+    font-size: 2em;
+    font-weight: 600;
+    color: rgb(237, 26, 26);
+}
+
+del {
+    font-size: 0.6em;
+    font-weight: 400;
+}
+.inc{
+    font-size: 0.6em;
+    font-weight: 400;
+    color: rgb(90, 82, 82);
+}
+.tax {
+    font-size: 0.7em;
+    color: rgb(83, 78, 78);
+}
+
+.qua {
+    font-size: 1em;
+    font-weight: 400;
+    color: black;
+}
+
+
+.details-section select {
+    margin-left: 5px; /* Reduced margin between text and dropdown */
+    padding: 5px;
+}
+
+.product-wish1 {
+    width: 250px;
+    color: black;
+    font-size: 1.2em;
+    text-align: start;
+    background-color: white;
+    transition: transform 0.3s ease-in-out; /* Add transition for zoom */
+}
+
+.product-wish1:hover {
+    background-color: #fff;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.product-cart1 {
+    width: 200px;
+    color: black;
+    background-color: #c6e3f8;
+    margin-left: -250px;
+    transition: transform 0.3s ease-in-out; /* Add transition for zoom */
+}
+
+.product-cart1:hover {
+    background-color: rgb(199, 199, 199);
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.product-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.product-button {
+    background: #e3f2fd;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.buy-now1 {
+    width: 200px;
+    color: white;
+    background-color: #086fb8;
+    transition: transform 0.3s ease-in-out; /* Add transition for zoom */
+}
+
+.buy-now1:hover {
+    background-color: rgb(199, 199, 199);
+    color: black;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.share-button {
+    width: 150px;
+    color: black;
+    font-size: 1.2em;
+    background-color: white;
+    transition: transform 0.3s ease-in-out; /* Add transition for zoom */
+}
+
+.share-button:hover {
+    background-color: white;
+    transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+.wishlist-share-section {
+    display: flex;
+    align-items: left;
+    gap: 10px; /* Space between buttons */
+}
+
+.product-wish1, .share-button {
+    background: transparent; /* Make buttons transparent if you want */
+    border: none; /* Remove border */
+    cursor: pointer; /* Show pointer on hover */
+}
+
+.product-wish1:hover, .share-button:hover {
+    opacity: 0.7; /* Add hover effect */
+}
+
+.wishlist-share {
+    position: relative; /* Positioning context for the dropdown */
+}
+
+.share-dropdown {
+    position: absolute;
+    top: 60px; /* Position it directly below the search bar */
+    left: 250px; /* Align it with the left edge of the search input */
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+    /* z-index: 10; */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 180px; /* Match the width of the search bar */
+    max-height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 3px; /* Match the border-radius of the search bar */
+}
+
+.share-dropdown button {
+    width: 100%; /* Full width */
+    padding: 8px; /* Add some padding */
+    text-align: center; /* Align text to the left */
+    border: none; /* Remove border */
+    background: none; /* Remove background */
+    cursor: pointer; /* Pointer cursor on hover */
+    color: black;
+}
+
+.share-dropdown .instagram {
+    color: #c13584; /* Instagram color */
+    background-color: white;
+    width: 27px;
+    height: 27px;
+}
+
+.share-dropdown .whatsapp {
+    color: green; /* Instagram color */
+    background-color: white;
+    width: 27px;
+    height: 27px;
+}
+
+.share-dropdown .facebook {
+    color: blue; /* Instagram color */
+    background-color: white;
+    width: 27px;
+    height: 27px;
+}
+.color-selection {
+    margin: 10px 0;
+}
+
+.color-button {
+    border: 1px solid #ccc;
+    background-color: white;
+    color: black;
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100px;
+    /* background-image: url('C:\Users\LENOVO-V14 UFI\Desktop\UC\client\public\images\b1.jpeg'); */
+}
+
+.color-button.selected {
+    background-color: green; /* Highlight color */
+    color: black;
+    font-size: 20px;
+}
+.view{
+    width: 150px;
+    color: black;
+    background-color: #f9fbfc;
+    font-size: 20px;
+    border: solid 3px rgb(209, 209, 243);
+    }
+    .view:hover{
+        color: black;
+    background-color: #e5e8ea;
+    font-size: 20px;
+    
+    }
+    .views{
+        color: black;
+    }
+    .view-3d-button{
+        margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: black;
+  cursor: pointer;
+  width: 180px;
+  border: 1px solid black;
+  margin-left: 200px;
+    }
+    .view-3d-button:hover{
+        margin-top: 15px;
+        padding: 10px 20px;
+        background-color: #fff;
+        color: black;
+        cursor: pointer;
+        border: 1px solid black;
+    }
+ /* General Mobile Styles */
+@media (max-width: 768px) {
+
+    .product-details {
+        flex-direction: column; /* Stack the image and details vertically */
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+        gap: 20px;
+    }
+
+    .image-section img {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio */
+        max-width: 350px; /* Set a reasonable max width for smaller screens */
+        margin: 0 auto;
+    }
+
+    .details-section {
+        margin-left: 0;
+        align-items: center; /* Center-align for mobile view */
+        padding: 0;
+    }
+
+    .details-section h2, 
+    .details-section p {
+        font-size: 1em; /* Reduce font size for better readability on mobile */
+    }
+
+    .price {
+        font-size: 1.5em; /* Adjust price size for mobile */
+    }
+
+    del, .inc, .tax, .qua {
+        font-size: 0.7em;
+    }
+
+    .product-wish1, .product-cart1, .buy-now1, .share-button, .view-3d-button {
+        width: 100%; /* Make buttons full width */
+        font-size: 1em; /* Adjust button font size */
+        margin: 5px 0; /* Add spacing between buttons */
+    }
+
+    .product-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        gap: 4px;
+    }
+
+    .color-selection {
+        text-align: center;
+    }
+
+    .color-button {
+        width: auto;
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .wishlist-share-section {
+        flex-direction: column; /* Stack wishlist and share options */
+        align-items: center;
+    }
+
+    .wishlist-share {
+        width: 100%;
+        display: flex;
+    }
+
+    .share-dropdown {
+        position: static; /* Display dropdown in flow of content */
+        width: 100%;
+        box-shadow: none;
+        margin-top: 10px;
+    }
+
+    .view {
+        width: 100%; /* Make full width for mobile */
+        font-size: 1em;
+    }
+
+    .view-3d-button {
+        width: 100%;
+        margin-left: 0;
+    }
+.pd{
+ display: none;
+}
+.share-dropdown .instagram {
+    color: #c13584; /* Instagram color */
+    background-color: white;
+    width: 27px;
+    height: 18px;
+}
+
+.share-dropdown .whatsapp {
+    color: green; /* Instagram color */
+    background-color: white;
+    width: 27px;
+    height: 18px;
+}
+
+.share-dropdown .facebook {
+    color: blue; /* Instagram color */
+    background-color: white;
+    width: 27px;
+    height: 18px;
+}
+.share-dropdown {
+    position: absolute;
+    top: 40px;
+    left: 190px;
+    background: white;
+    color: black;
+    border: 1px solid #ccc;
+    /* z-index: 10; */
+    list-style: none;
+    padding: 0;
+    width: 140px;
+    max-height: 165px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+}
+.dd {
+   
+    margin: 1px;
+   
+}
+}

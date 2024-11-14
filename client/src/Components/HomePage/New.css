@@ -1,0 +1,150 @@
+.product-grid {
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 16px;  */
+  padding: 16px;
+}
+
+.product-card {
+  width: 250px; /* Fixed width for card */
+  height: auto; /* Let the height adjust to content */
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.product-card1 {
+  padding: 3px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 20px;
+  min-height: 27vh; /* Adjust as necessary */
+  width: 200px; /* Adjusted width for 5 cards */
+  flex: 1 1 calc(20% - 16px); /* Adjusts width to fit 5 cards per row minus the gap */
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+}
+
+.product-image {
+  width: 80%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-name {
+  font-size: 16px;
+  color: #333;
+}
+
+.new-label {
+  position: absolute;
+  top: 1px;
+  right: 2px;
+  background-color: #e63946;
+  color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 5px;
+  width: 80px;
+  height: 27px;
+  font-weight: bold;
+}
+
+/* Buttons for Wishlist, Add to Cart, and Buy Now */
+.product-actions {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+button {
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Wishlist Button */
+.wishlist-btn {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  width: 60px;
+  font-size: 1.2em;
+}
+
+.wishlist-btn:hover {
+  background-color: rgb(230, 229, 229);
+}
+
+/* Add to Cart Button */
+.add-to-cart-btn {
+  background-color: #c6e3f8;
+  color: black;
+  width: 150px;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #ebebeb;
+}
+
+/* Buy Now Button */
+.buy-now-btn {
+  background-color: #0063aa;
+  color: white;
+  width: 150px;
+}
+
+.buy-now-btn:hover {
+  background-color: #e0e0e0;
+}
+
+del {
+  font-size: 15px;
+  color: #555;
+  padding-left: 15px;
+  font-weight: 600;
+}
+
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+  .product-card {
+    width: calc(33.33% - 16px); /* 3 cards per row */
+  }
+
+  .product-name {
+    font-size: 14px; /* Slightly smaller font for mobile */
+  }
+
+  button {
+    width: 100%; /* Full-width buttons on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%; /* Full width for smaller screens */
+    height: auto; /* Let the height adjust to content */
+  }
+
+  .product-name {
+    font-size: 12px; /* Further reduce font size */
+  }
+
+  .new-label {
+    font-size: 16px; /* Smaller label font */
+  }
+
+  button {
+    font-size: 12px; /* Smaller button font */
+  }
+}

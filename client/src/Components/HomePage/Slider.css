@@ -1,0 +1,84 @@
+
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    height: 80%;
+    /* overflow: hidden; */
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    
+}
+
+.slide {
+    flex: 1 1 50%;
+    max-width: 100%;
+    background-size: cover;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 20px;
+}
+
+.sale {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.slick-slide img {
+    width: 100%;
+    height:80%;
+    object-fit: cover;
+}
+
+.sale-banner {
+    width: 100%;
+    height: 400px;
+    object-fit: cover; 
+}
+@media (max-width: 768px) {
+    .slider-container {
+        flex-direction: column; /* Stack slides on top of each other */
+        align-items: center;
+        gap: 10px;
+    }
+
+    .slide {
+        flex: 1 1 100%; /* Take full width on mobile */
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 15px;
+    }
+
+    .sale {
+        flex: 1 1 100%; /* Sale section takes full width */
+        max-width: 100%;
+    }
+
+    .sale-banner {
+        height: 300px; /* Adjust banner height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .slide {
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: 10px;
+    }
+
+    .sale-banner {
+        height: 250px; /* Further reduce banner height on very small screens */
+    }
+    .slick-next:before {
+        
+        font-size: 0px;
+       
+    }
+    .slick-next:after {
+        
+        font-size: 0px;
+       
+    }
+}
