@@ -56,6 +56,7 @@ import RecycleProgram from './Footer/RecycleProgram.js';
 import InstallationAndAssembly from './Footer/InstallationAndAssembly.js';
 import ThreeDView from './ThreeDView.js';
 import ARPage from './ARPage.js';
+import Payment from './Cart/Payment.js';
 
 
 
@@ -123,6 +124,7 @@ const Routing = () => {
           <Route path="/installationandassembly" element={<InstallationAndAssembly/>} />
           <Route path="/product/:productId/3dview" element={<ThreeDView />} /> {/* 3D view route */}
 <Route path="/ar/:productId" element={<ARPage />} />
+<Route path="/payment" element={<Payment />} />
 
       </Routes>
     </div>
