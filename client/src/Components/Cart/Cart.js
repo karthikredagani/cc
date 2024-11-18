@@ -174,7 +174,7 @@ const calculateTotalItems = () => { return quantities.reduce((total, quantity) =
             <p>Subtotal: ₹{calculateSubTotal().toFixed(2)}</p>
             <p>Discount: -{(discount * 100).toFixed(0)}%</p>
             <p>Total: ₹{calculateTotal().toFixed(2)}</p>
-            <button onClick={handleCheckout} disabled={loading}>
+            <button className='check' onClick={handleCheckout} disabled={loading}>
               {loading ? 'Processing...' : 'Checkout'}
             </button>
           </div>
