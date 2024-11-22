@@ -81,7 +81,7 @@ const calculateTotalItems = () => { return quantities.reduce((total, quantity) =
       );
 
       const options = {
-        key: 'rzp_test_MAk7r0iPLigO8e', // Replace with your Razorpay Key ID
+        key: 'rzp_test_mbybXhy8QNsmYM', // Replace with your Razorpay Key ID
         amount: order.amount,
         currency: order.currency,
         order_id: order.id,

@@ -14,7 +14,7 @@ const Payment = () => {
 
       // Razorpay options
       const options = {
-        key: 'rzp_test_MAk7r0iPLigO8e', // Razorpay Key ID
+        key: 'rzp_test_mbybXhy8QNsmYM', // Razorpay Key ID
         amount: order.amount,
         currency: order.currency,
         order_id: order.id,
@@ -40,8 +40,8 @@ const Payment = () => {
         },
       };
 
-      const rzp1 = new Razorpay(options);
-
+// eslint-disable-next-line no-undef
+const rzp1 = new Razorpay(options);
       // Debugging to ensure Razorpay object is created
       if (!rzp1) {
         console.error('Error: Razorpay object not created');

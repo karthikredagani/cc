@@ -1,0 +1,126 @@
+/* General Page Styling */
+.ar-view-page {
+    text-align: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .ar-view-page h2 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .ar-view-page p {
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+  }
+  
+  /* Model Viewer Container */
+  .model-viewer-container {
+    margin: 0 auto;
+    max-width: 100%;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  /* AR Buttons */
+  .ar-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+  }
+  
+  .back-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .back-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .ar-buttons a {
+    text-decoration: none;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .ar-view-page h2 {
+      font-size: 20px;
+    }
+  
+    .back-button {
+      padding: 10px 20px;
+      font-size: 14px;
+    }
+  
+    .model-viewer-container {
+      height: 70vh; /* Slightly smaller on mobile */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .ar-view-page h2 {
+      font-size: 18px;
+    }
+  
+    .back-button {
+      padding: 10px 15px;
+      font-size: 12px;
+    }
+  
+    .model-viewer-container {
+      height: 60vh; /* Further reduce height for very small screens */
+    }
+  }
+  .ar-view-page {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .model-viewer-container {
+    width: 100%;
+    height: 80vh;
+  }
+  
+  .ar-buttons {
+    margin-top: 20px;
+  }
+  
+  .back-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #008cba;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .back-button:hover {
+    background-color: #005f6b;
+  }

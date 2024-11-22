@@ -20,8 +20,8 @@ app.use('/uploads', express.static(path.join(__dirname, 'uploads')));
 
 // Razorpay instance setup
 const razorpay = new Razorpay({
-  key_id: process.env.RAZORPAY_KEY_ID || 'rzp_test_MAk7r0iPLigO8e', // Replace with your actual Razorpay key_id
-  key_secret: process.env.RAZORPAY_KEY_SECRET || '0Rn80Z0SDdUHtzFdKiJobHxN', // Replace with your actual Razorpay key_secret
+  key_id: process.env.RAZORPAY_KEY_ID || 'rzp_test_mbybXhy8QNsmYM', // Replace with your actual Razorpay key_id
+  key_secret: process.env.RAZORPAY_KEY_SECRET || 'ccRvSxSPhCIsjPSn155ScQdV', // Replace with your actual Razorpay key_secret
 });
 
 // Connect to MongoDB and start the server

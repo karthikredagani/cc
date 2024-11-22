@@ -23,22 +23,22 @@ const Model = ({ glbFilePath }) => {
 const ThreeDView = () => {
   const { productId } = useParams();
   const products = [
-    { id: '1', name: 'Modern Sofa', glbFile: '/images/base1.glb' },
-    { id: '2', name: 'Modern Sofa', glbFile: '/images/base2.glb' },
-    { id: '3', name: 'Modern Sofa', glbFile: '/images/base3.glb' },
-    { id: '4', name: 'Modern Sofa', glbFile: '/images/base4.glb' },
-    { id: '5', name: 'Modern Sofa', glbFile: '/images/base5.glb' },
-    { id: '6', name: 'Modern Sofa', glbFile: '/images/base6.glb' },
-    { id: '7', name: 'Modern Sofa', glbFile: '/images/base7.glb' },
-    { id: '8', name: 'Modern Sofa', glbFile: '/images/base8.glb' },
-    { id: '9', name: 'Modern Sofa', glbFile: '/images/base9.glb' },
-    { id: '10', name: 'Modern Sofa', glbFile: '/images/base10.glb' },
-    { id: '11', name: 'Modern Sofa', glbFile: '/images/base11.glb' },
-    { id: '12', name: 'Modern Sofa', glbFile: '/images/base12.glb' },
-    { id: '13', name: 'Modern Sofa', glbFile: '/images/base13.glb' },
-    { id: '14', name: 'Modern Sofa', glbFile: '/images/base14.glb' },
-    { id: '15', name: 'Modern Sofa', glbFile: '/images/base15.glb' },
-    { id: '16', name: 'Modern Sofa', glbFile: '/images/base16.glb' },
+    { id: '1', name: 'Modern Sofa', glbFile: '/images/base1.glb', usdzFile: '/images/base1.usdz' },
+    { id: '2', name: 'Modern Sofa', glbFile: '/images/base2.glb', usdzFile: '/images/base2.usdz' },
+    { id: '3', name: 'Modern Sofa', glbFile: '/images/base3.glb', usdzFile: '/images/base3.usdz' },
+    { id: '4', name: 'Modern Sofa', glbFile: '/images/base4.glb', usdzFile: '/images/base4.usdz' },
+    { id: '5', name: 'Modern Sofa', glbFile: '/images/base5.glb', usdzFile: '/images/base5.usdz' },
+    { id: '6', name: 'Modern Sofa', glbFile: '/images/base6.glb', usdzFile: '/images/base6.usdz' },
+    { id: '7', name: 'Modern Sofa', glbFile: '/images/base7.glb', usdzFile: '/images/base7.usdz' },
+    { id: '8', name: 'Modern Sofa', glbFile: '/images/base8.glb', usdzFile: '/images/base8.usdz' },
+    { id: '9', name: 'Modern Sofa', glbFile: '/images/base9.glb', usdzFile: '/images/base9.usdz' },
+    { id: '10', name: 'Modern Sofa', glbFile: '/images/base10.glb', usdzFile: '/images/base10.usdz' },
+    { id: '11', name: 'Modern Sofa', glbFile: '/images/base11.glb', usdzFile: '/images/base11.usdz' },
+    { id: '12', name: 'Modern Sofa', glbFile: '/images/base12.glb', usdzFile: '/images/base12.usdz' },
+    { id: '13', name: 'Modern Sofa', glbFile: '/images/base13.glb', usdzFile: '/images/base13.usdz' },
+    { id: '14', name: 'Modern Sofa', glbFile: '/images/base14.glb', usdzFile: '/images/base14.usdz' },
+    { id: '15', name: 'Modern Sofa', glbFile: '/images/base15.glb', usdzFile: '/images/base15.usdz' },
+    { id: '16', name: 'Modern Sofa', glbFile: '/images/base16.glb', usdzFile: '/images/base16.usdz' },
   ];
 
   const product = products.find((p) => p.id === productId);
@@ -51,9 +51,14 @@ const ThreeDView = () => {
   }
 
   const startAR = () => {
-    const qrCodeLink = `http://localhost:3000/ar/${productId}`; // Replace with your actual AR page URL
-    setQRCodeValue(qrCodeLink);
-    setShowQRCode(true); // Show the QR code
+    const ipAddress = '192.168.0.124'; // Your local IP address for testing
+    const port = '3000'; // Port number of your server
+
+    // Construct the AR URL for this product
+    const qrCodeLink = `http://${ipAddress}:${port}/ar/${productId}`;
+
+    setQRCodeValue(qrCodeLink); // Set the QR code URL value
+    setShowQRCode(true); // Show the QR code container
   };
 
   return (
@@ -85,7 +90,6 @@ const ThreeDView = () => {
         <Link to={`/product/${productId}`}>
           <button className="back">Back to Product</button>
         </Link>
-        
         <button className="ar-button" onClick={startAR}>View in AR</button>
       </div>
 

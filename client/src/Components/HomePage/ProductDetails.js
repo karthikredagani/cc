@@ -16,7 +16,7 @@ const products = [
 id: '1',
 name: 'Modern Sofa',
 description: 'The product is a great choice. It has a solid construction, which makes it a long-lasting investment for you and your family.',
-price: '49999',
+price: '3000',
 images: {
 Gray: '/images/base1.jpg',
 Yellow: '/images/bc1.jpeg',
