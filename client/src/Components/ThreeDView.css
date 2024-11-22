@@ -1,4 +1,3 @@
-/* Base Styles */
 .threeD-view-page {
   display: flex;
   flex-direction: column;
@@ -109,4 +108,45 @@
     padding: 8px 16px;
   }
   
+}
+.threeD-view-page {
+  text-align: center;
+  margin: 20px;
+}
+
+.threeD-viewer-container {
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.ar-button,
+.back {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  background-color: #008cba;
+  color: white;
+  border-radius: 5px;
+}
+
+.ar-button:hover,
+.back:hover {
+  background-color: #005f6b;
+}
+
+.qr-code-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.qr-code-container h3 {
+  margin-bottom: 20px;
 }

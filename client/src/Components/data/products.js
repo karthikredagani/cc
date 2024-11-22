@@ -1,16 +1,5 @@
-import React, { useEffect } from 'react';
-import { useParams } from 'react-router-dom';
-import { Canvas } from '@react-three/fiber';
-import { OrbitControls, useGLTF } from '@react-three/drei';
-
-const Model = ({ glbFilePath }) => {
-  const { scene } = useGLTF(glbFilePath);
-  return <primitive object={scene} />;
-};
-
-const ARPage = () => {
-  const { productId } = useParams();
-  const products = [
+// src/data/products.js
+export const products = [
     { id: '1', name: 'Modern Sofa', glbFile: '/images/base1.glb' },
     { id: '2', name: 'Modern Sofa', glbFile: '/images/base2.glb' },
     { id: '3', name: 'Modern Sofa', glbFile: '/images/base3.glb' },
@@ -28,26 +17,4 @@ const ARPage = () => {
     { id: '15', name: 'Modern Sofa', glbFile: '/images/base15.glb' },
     { id: '16', name: 'Modern Sofa', glbFile: '/images/base16.glb' },
   ];
-
-  const product = products.find((p) => p.id === productId);
-
-  useEffect(() => {
-    // Initialize AR logic here (WebXR or A-Frame)
-  }, [product]);
-
-  return (
-    <div>
-      <h1>AR View</h1>
-      {product && (
-        <Canvas>
-          <ambientLight />
-          <directionalLight position={[10, 10, 5]} />
-          <Model glbFilePath={product.glbFile} />
-          <OrbitControls />
-        </Canvas>
-      )}
-    </div>
-  );
-};
-
-export default ARPage;
+  
